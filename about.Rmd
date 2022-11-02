@@ -1,0 +1,73 @@
+
+
+
+---
+title: "About me "
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    
+---
+
+
+# information about me 
+
+resume information
+
+
+
+# education experience
+
+Columbia University Mailman School of Public Health, New York, NY            Sept 2021-May 2023         
+Master of Science in Biostatistics, Concentration: Data Science, Statistics and Epidemiology
+
+•	Relevant Courses: Biostatistical Methods, Probability, Epidemiology, SAS programing, Introduction to Randomized clinical trial and Introduction to Drug Development
+
+Dickinson College, Carlisle, PA	,  Graduated May 2020
+
+Bachelor of Science, Biochemistry & Molecular Biology, Concentration: Cell Biology and Development
+•	Relevant Courses: Introduction to Python, Molecular Basis of Disease, Genetics, Cancer Biology and Protein Engineering
+
+
+
+
+
+
+
+
+# professional experience
+
+Research Assistant   Rockefeller University, NY                                        May 2022 -May 2023
+Advisor: Robert B. Macarthur, M.D., Ph.D./Professor
+
+•	Collaborated in translational studies involving orphan drug pharmaceutical statistic visualization and analysis regarding clinical trials and marketing of orphan drug applying SAS coding and EXCEL skills
+
+•	Evaluated complex dosage form orphan drug approval pattern concerning detailed drug-specific information through analyzing FDA documents including orange book and published reviews
+
+•	Investigated pediatric orphan drug patent associates with clinical trials founded by Eunice Kennedy Shriver National Institute of Child Health and Human Development corresponding to Best Pharmaceuticals for Children Act
+
+•	Participated in construction of  literature review Pathways for Pediatric Drug Approval and the Practice of Pediatric Drug Compounding in the United States: Review and Suggestions for Improvement  and How Compounding Pharmacies Fill Critical Gaps in Pediatric Drug Development Processes: Suggested Regulatory Changes to Meet Future Challenges for electronic publication by December 2022
+
+
+
+
+
+Research Assistant, United Laboratories                                         	May-Aug 2021
+
+•	Utilized R and Excel to visualize and summarize insulin recombinant protein expression data for yeast cellular system, including performing ANOVA tests for a pharmaceutical firm
+
+•	Identified significant differences in effectiveness between two genetic strains in producing insulin
+
+
+
+
+
+Research Assistant, Center for Integrated Primary Care, UMASS Medical School, Worcester, MA                             Advisor: Shan Lu, M.D., Ph.D./Professor				May–Aug 2019
+
+•	Collaborated in research team to develop HIV DNA vaccine
+
+•	Accurately followed research protocols to perform cell transfection, extracting DNA from protein of influenza virus and fusing into HEK cellular DNA after examining  quantity and quality of induced DNA; reexamined quantity/quality of cellular DNA after fusion 
+
+
+
