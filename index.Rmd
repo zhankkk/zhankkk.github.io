@@ -16,3 +16,9 @@ output:
 # link
 link to my resume
 [about](about.html)
+
+
+# plotly plots
+
+[dashboard](dashboard.html)
+

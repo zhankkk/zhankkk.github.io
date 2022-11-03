@@ -1,0 +1,75 @@
+
+
+---
+title: "plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    navbar:
+      - { icon: fa-home, href: index.html, align: right }
+      
+      - { icon: fa-envelope, href: mailto:<kz2383@cumc.columbia.edu>, align: right }
+      - { icon: fa-github, href: https://github.com/zhankkk/, align: right }
+    source_code: embed
+    theme: 
+      bootswatch: cerulean
+---
+
+
+This page will display some plotly plots based on specific dataset. 
+
+# plotly plots
+
+
+[plotly](plotly.html)
+
+
+# load datasets
+
+
+
+Tidy the dataset by selecting variables needed and restrict order number to a ramge of 5 to 60. 
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+```
+```{r}
+data("instacart")
+
+instacart = 
+  instacart%>% 
+  janitor::clean_names()%>%
+  select(
+    product_id,product_name,order_number, order_hour_of_day, department) %>%
+    filter(order_number %in% 5:60)
+  
+
+```
+
+Displaying order number distribution of products based on department applying boxplot
+```{r}
+instacart %>% 
+  plot_ly(y = ~order_number, color = ~department, type = "box", colors = "viridis")
+
+
+```
+scatter plot for order number during different hour of the day 
+```{r}
+instacart %>%
+  filter(department %in% c("beverage","frozen"))%>%
+  plot_ly(
+    x = ~order_hour_of_day, y = ~order_number, type = "scatter", mode = "markers",
+    color = ~department, alpha = 0.3)
+```
+
+bar chart showing order count distribution for  snacks based on product name
+```{r}
+ instacart %>% 
+  filter(department %in% c("snacks"))%>%
+  plot_ly(x = ~product_name, y = ~order_number, type = 'bar')
+```
+
+
