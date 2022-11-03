@@ -1,0 +1,66 @@
+
+
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    
+    navbar:
+      - { icon: fa-home, href: index.html, align: right }
+      
+      - { icon: fa-envelope, href: mailto:<kz2383@cumc.columbia.edu>, align: right }
+      - { icon: fa-github, href: https://github.com/zhankkk/, align: right }
+    source_code: embed
+    theme: 
+      bootswatch: cerulean
+    
+    
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+
+
+
+### distribution of order numberfor different department applying boxplot
+```{r,message=FALSE,warning=FALSE}
+
+instacart %>% 
+  plot_ly(y = ~order_number, color = ~department, type = "box", colors = "viridis")
+
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### scatter plot of order number Vs order hour of day
+
+
+```{r,message=FALSE,warning=FALSE}
+instacart %>%
+  filter(department %in% c("beverage","frozen"))%>%
+  plot_ly(
+    x = ~order_hour_of_day, y = ~order_number, type = "scatter", mode = "markers",
+    color = ~department, alpha = 0.3)
+```
+
+### distribution of order count for snacks applying bar chart
+
+
+```{r,message=FALSE,warning=FALSE}
+instacart %>% 
+  filter(department %in% c("snacks"))%>%
+  plot_ly(x = ~product_name, y = ~order_number, type = 'bar')
+  
+```
